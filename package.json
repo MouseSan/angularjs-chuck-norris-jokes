@@ -1,13 +1,14 @@
 {
   "name": "chucknorrisjokes",
   "version": "1.0.0",
-  "description": "",
+  "description": "App using chuck norris jokes API",
+  "repository": "http://github.com/MouseSan/angularjs-chuck-norris-jokes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress -p",
     "watch": "webpack --progress --watch",
-    "server": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open"
   },
   "author": "Myshkovetc Viacheslav",
   "license": "ISC",

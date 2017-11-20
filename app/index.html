@@ -4,10 +4,20 @@
   <script type="text/javascript" src="bundle.js"></script>
 </head>
 
-<body ng-controller="JokeController as joke">
-<!--  Store Header  -->
-<header>
-  <h1 class="text-center">{{joke.jokes}}</h1>
-</header>
+<body ng-controller="JokeController as jokeController">
+
+<div class="container">
+
+  <div class="centered-element">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>Joke #{{jokeController.numberOfJoke}}</h1>
+      <h2>{{jokeController.joke}}</h2>
+      <button type="button" class="btn btn-lg btn-primary" ng-click="jokeController.getJoke()">Give me a joke</button>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
